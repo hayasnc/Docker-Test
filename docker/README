@@ -1,0 +1,14 @@
+To Build Docker Container 1
+$ cd into directory 'docker'
+$ docker build --no-cache -t helloair:v1 -f airflow_docker/dockerfiles/Air.Dockerfile .  
+
+To Build Docker Container 2
+$ docker build --no-cache -t helloweb:v1 -f web_docker/dockerfiles/Web.Dockerfile .
+
+
+To Run Docker 1
+$ docker run helloair:v1 ls -a tmp
+
+To Run Docker 2
+$ docker run helloweb:v1 ls -a tmp
+
